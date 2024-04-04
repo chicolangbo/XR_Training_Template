@@ -1,0 +1,1 @@
+time-2000,score-300,highLight-ON

@@ -1,0 +1,289 @@
+
+/// <summary>
+/// 파츠,파츠슬럿관련 ID
+/// </summary>
+public class P 
+{
+    //현가장치
+    public const int STRUT_ASSEMBLY = 0;
+    public const int WHEEL_NUT_SLOT = 0;
+    public const int WHEEL = 1;
+    public const int SHOCK_ABSORBER_HANDLE = 1; 
+    public const int DOOR_HANDLE_OPEN = 2;
+    public const int BREAK_ICON = 2; 
+    public const int HOOD_LEVER = 3;
+    public const int DOOR_HANDLE_CLOSE = 4;
+    public const int HOOD_LATCH = 5;
+    public const int HOOD_LATCH2 = 15;
+    public const int WHEEL_ALIGNMENT1 = 4;
+    public const int WHEEL_ALIGNMENT2 = 5;
+    public const int WHEEL_ALIGNMENT3 = 6;
+    public const int WHEEL_ALIGNMENT4 = 7;
+    public const int HOOD = 6;
+    public const int HOOD_BONG = 7;
+    public const int LOWER_ARM_PIN = 5;
+    public const int LOWER_ARM_PIN_SLOT = 5;
+    public const int LOWER_ARM_CASTLE_KNUT = 6;
+    public const int LOWER_ARM_CASTLE_KNUT_SLOT = 6;
+    public const int LOWER_ARM_WASHER = 7;
+    public const int LOWER_ARM_WASHER_SLOT = 7;
+    public const int BREAK_HOSE_BRACKET = 8;
+    public const int LOWER_ARM_BOLT = 8;
+    public const int LOWER_ARM_BOLT_SLOT = 8;
+    public const int LOWER_ARM_BOLT1 = 9; 
+    public const int LOWER_ARM_BOLT_SLOT5 = 9;
+    public const int WHEEL_SPEED_CENSOR_BRACKET = 9;
+    public const int SHOCK_ABSORBER_LEVER = 9;
+    public const int STABILIZER_LINK = 10;
+    public const int LOWER_ARM_KNUT = 10;
+    public const int LOWER_ARM_KNUT_SLOT = 10;
+    public const int LOWER_ARM = 11;
+    public const int SEAT = 11;
+    public const int MONITOR = 12; 
+    public const int WIPER_NUT_COVER_SLOT1 = 12;
+    public const int WIPER_NUT_COVER_SLOT2 = 13;
+    public const int BATTERY_PLUS_TERMINAL_COVER = 13;
+    public const int CAR_SPRING = 14;
+    public const int WIPER_NUT = 14;
+    public const int WIPER_NUT_SLOT = 14;
+    public const int WIPER_NUT_NEXT = 15;
+    public const int WIPER_NUT_SLOT_NEXT = 15;
+    public const int WIPER_LEFT = 16;
+    public const int WIPER_RIGHT = 17;
+    public const int KAWUL_COVER_CLIP_SLOT1 = 18;
+    public const int KAWUL_COVER_CLIP_SLOT2 = 19;
+    public const int KAWUL_COVER_CLIP_SLOT3 = 20;
+    public const int KAWUL_COVER_CLIP_SLOT4 = 21;
+    public const int KAWUL_COEVER = 22;
+    public const int STRUT_ASSEMBLY_UPPER_BOLT = 23;
+    public const int STRUT_ASSEMBLY_UPPER_BOLT_SLOT = 23;
+    public const int STRUT_ASSEMBLY_UPPER_BOLT2 = 24;
+    public const int STRUT_ASSEMBLY_UPPER_BOLT_SLOT2= 24;
+    public const int STRUT_ASSEMBLY_UPPER_BOLT1 = 25;
+    public const int STRUT_ASSEMBLY_UPPER_BOLT_SLOT1 = 25;
+    public const int WHEEL_SPEED_CENSOR_BRACKET_HOSE_BOLT_SLOT = 27;
+    public const int STABILIZER_LINK_UPPER_NUT_SLOT = 28;
+    public const int STRUT_ASSEMBLY_LOWER_BOLT = 29;
+    public const int STRUT_ASSEMBLY_LOWER_BOLT_SLOT = 29;
+    public const int STRUT_ASSEMBLY_LOWER_NUT = 30;
+    public const int STRUT_ASSEMBLY_LOWER_NUT_SLOT = 30;
+    public const int STRUT_ASSEMBLY_LOWER_NUT2 = 31;
+    public const int STRUT_ASSEMBLY_LOWER_NUT_SLOT2 = 31;
+    public const int STRUT_ASSEMBLY_LOWER_NUT1 = 32;
+    public const int STRUT_ASSEMBLY_LOWER_NUT_SLOT1 = 32;
+    public const int BALL_JOINT_FULLER_SLOT = 33;
+    public const int STRUT_ASSEMBLY_GHOST_TABLE = 33;
+    public const int ROCK_NUT_SLOT = 36;
+    public const int SPRING = 39; 
+    public const int TYROD_NUT_SLOT = 45;
+    public const int SHOCK_ABSORBER_PISTON = 46;
+    public const int STABILIZER_LINK_UPPER_NUT_SLOT1 = 50;
+    public const int LOWER_ARM_BOLT_SLOT4 = 208;
+    public const int WHEEL_NUT1 = 300;
+    public const int WHEEL_NUT_SLOT1 = 300;
+    public const int WHEEL_NUT2 = 301;
+    public const int WHEEL_NUT_SLOT2 = 301;
+    public const int WHEEL_NUT3 = 302;
+    public const int WHEEL_NUT_SLOT3 = 302;
+    public const int WHEEL_NUT4 = 303;
+    public const int WHEEL_NUT_SLOT4 = 303;
+    public const int WHEEL_NUT5 = 304;
+    public const int WHEEL_NUT_SLOT5 = 304;
+    public const int LOWER_ARM_BOLT_SLOT3 = 309;
+    public const int WIPER_NUT_SLOT1 = 315;
+    public const int WIPER_NUT_SLOT2 = 316;
+    public const int STRUT_ASSEMBLY_LOWER_BOLT_SLOT3 = 329;
+    public const int STRUT_ASSEMBLY_LOWER_BOLT_SLOT4 = 330;
+    public const int KNOCK_NUT_SLOT = 336;
+    public const int LOWER_ARM_BOLT_SLOT1 = 409;
+    public const int BREAK_HOSE_BRACKET_BOLT_SLOT = 426;
+    public const int WHEEL_SPEED_CENSOR_BRACKET_BOLT = 427;
+    public const int STRUT_ASSEMBLY_LOWER_BOLT_SLOT5 = 429;
+    public const int STRUT_ASSEMBLY_LOWER_BOLT_SLOT2 = 430;
+    public const int LOWER_ARM_BOLT_SLOT2 = 509;
+
+
+    //시동장치
+    public const int BATTERY_MINUS_TERMINAL = 62;
+    public const int PLUS_LEAD_LINE = 64;
+    public const int PLUS_LEAD_LINE_SLOT = 64;
+    public const int PLUS_LEAD_LINE_GHOST_TABLE = 64;
+    public const int MINUS_LEAD_LINE_SLOT = 65;
+    public const int MINUS_LEAD_LINE_GHOST_TABLE = 65;
+    public const int MINUS_LEAD_LINE = 65;
+    public const int BATTERY_BRACKET_BOLT_SLOT = 69;
+    public const int BATTERY = 71;
+    public const int BATTERY_SLOT = 71;
+    public const int BATTERY_GHOST_TABLE = 71;
+    public const int BATTERY_PLUS_TERMINAL = 73;
+    public const int ELECTRIC_MOTOR = 74;
+    public const int ELECTRIC_MOTOR_GHOST_TABLE = 74;
+    public const int ELECTRIC_MOTOR_LOWER_BOLT_SLOT = 75;
+    public const int ENGINE_COVER = 76;
+    public const int ENGINE_COVER_SLOT = 76;
+    public const int ELECTRIC_MOTOR_UPPER_BOLT = 77;
+    public const int ELECTRIC_MOTOR_UPPER_BOLT_SLOT = 77;
+    public const int UNDER_COVER_CLIP_SLOT = 78; 
+    public const int UNDER_COVER = 79;
+    public const int S_TERMINAL_CONNECTOR = 80; 
+    public const int ELECTRIC_MOTOR_B_NUT_SLOT = 81;
+    public const int B_TERMINAL_CABLE = 82;
+    public const int SOLENOID_SWITCH_M_NUT = 83;
+    public const int SOLENOID_SWITCH_M_NUT_SLOT = 83;
+    public const int M_TERMINAL_CABLE = 84;
+    public const int SOLENOID_SWITCH_BOLT1 = 85;
+    public const int SOLENOID_SWITCH_BOLT_SLOT1 = 85;
+    public const int SOLENOID_SWITCH_BOLT2 = 86;
+    public const int SOLENOID_SWITCH_BOLT_SLOT2 = 86;
+    public const int SOLENOID_SWITCH = 87;
+    public const int SOLENOID_SWITCH_SLOT2 = 87;
+    public const int BRUSH_HOLDER_BOLT1 = 88;
+    public const int BRUSH_HOLDER_BOLT_SLOT1 = 88;
+    public const int BRUSH_HOLDER_BOLT2 = 89;
+    public const int BRUSH_HOLDER_BOLT_SLOT2 = 89;
+    public const int HOUSING_BOLT1 = 90;
+    public const int HOUSING_BOLT2 = 91;
+    public const int REAR_BRACKET = 92;
+    public const int BRUSH_HOLDER_ASSEMBLY = 93;
+    public const int ELECTRIC_SCALE = 94;
+    public const int YOLK_ASSEMBLY = 95;
+    public const int LEVER_PACKING = 96;
+    public const int OIL_GEAR1 = 97;
+    public const int OIL_GEAR2 = 98;
+    public const int OIL_GEAR3 = 99;
+    public const int HOUSING = 100;
+    public const int SHIFT_LEVER = 101;
+    public const int BRUSH_HOLDER_PLATE_SLOT = 103;
+    public const int LEAD_LINE = 103;
+    public const int LEAD_LINE2 = 104;
+    public const int BRUSH_HOLDER_SLOT = 104;
+    public const int BATTERY_TESTER_RED_LEAD_LINE = 108;
+    public const int BATTERY_TESTER_RED_LEAD_LINE_SLOT = 108;
+    public const int BATTERY_TESTER_PLUS_CABLE_GHOST_TABLE = 108;
+    public const int BATTERY_TESTER_MINUS_LINE = 109;
+    public const int BATTERY_TESTER_MINUS_CABLE_GHOST_TABLE = 109;
+    public const int BATTERY_TESTER_BLACK_LEAD_LINE = 109;
+    public const int BATTERY_TESTER_BLACK_LEAD_LINE_SLOT = 109;
+    public const int BATTERY_CHARGER_RED_LEAD_LINE_GHOST_TABLE = 110;
+    public const int BATTERY_CHARGER_RED_LEAD_LINE = 110;
+    public const int BATTERY_CHARGER_BLACK_LEAD_LINE = 111;
+    public const int BATTERY_CHARGER_BLACK_LEAD_LINE_GHOST_TABLE = 111;
+    public const int PLUS_JUMP_LINE = 112;
+    public const int PLUS_JUMP_LINE_SLOT = 112;
+    public const int PLUS_JUMP_LINE_GHOST_TABLE = 112;
+    public const int MINUS_JUMP_LINE = 113;
+    public const int MINUS_JUMP_LINE_SLOT = 113;
+    public const int MINUS_JUMP_LINE_GHOST_TABLE = 113;
+    public const int MINUS_JUMP_LINE_GHOST_TABLE2 = 114;
+    public const int BATTERY_MINUS_TERMINAL_SLOT = 115;
+    public const int BATTERY_MINUS_TERMINAL_LINE = 115;
+    public const int BATTERY_MINUS_TERMINAL_LINE2 = 116;
+    public const int BATTERY_MINUS_TERMINAL_LINE3 = 119;
+    public const int BATTERY_MINUS_TERMINAL_LINE4 = 120;
+    public const int BATTERY_MINUS_TERMINAL_CABLE = 115;
+    public const int BATTERY_MINUS_TERMINAL_CABLE2 = 116;
+    public const int BATTERY_MINUS_TERMINAL_GHOST_TABLE = 115;
+    public const int ELECTRIC_MOTOR_B_TERMINAL_SLOT = 116;
+    public const int ELECTRIC_MOTOR_B_TERMINAL_GHOST_TABLE = 116;
+    public const int BATTERY_PLUS_TERMINAL_SLOT = 117;
+    public const int BATTERY_PLUS_TERMINAL_LINE = 117;
+    public const int BATTERY_PLUS_TERMINAL_LINE2 = 118;
+    public const int BATTERY_PLUS_TERMINAL_GHOST_TABLE = 117;
+    public const int BATTERY_PLUS_TERMINAL_CABLE = 117;
+    public const int BATTERY_PLUS_TERMINAL_CABLE2 = 118;
+    public const int ELECTRIC_MOTOR_B_TERMINAL_SLOT2 = 118;
+    public const int ELECTRIC_MOTOR_B_TERMINAL_SLOT3 = 119;
+    public const int ELECTRIC_MOTOR_B_TERMINAL_GHOST_TABLE2 = 118;
+    public const int MINUS_CABLE_GHOST_TABLE1 = 119;
+    public const int MINUS_CABLE = 119;
+    public const int MINUS_CABLE2 = 120;
+    public const int MINUS_CABLE_GHOST_TABLE2 = 120;
+    public const int S_TERMINAL_SLOT = 120;
+    public const int AMATURE_L_SLOT = 122;
+    public const int MULTIMETER = 125;
+    public const int MULTIMETER_SLOT = 125;
+    public const int MULTIMETER_GHOST_TABLE = 125;
+    public const int MULTIMETER_DIAL = 126;
+    public const int CLAMPMETER_GHOST_TABLE = 127;
+    public const int BETWEEN_B_TERMINAL_AND_BATTERY_PLUS_TERMINAL1 = 127;
+    public const int BATTERY_TESTER_GHOST_TABLE = 130;
+    public const int VERNIER_CALIPUS_GHOST_TABLE = 132;
+    public const int VERNIER_CALIPUS_SLOT = 132;
+    public const int BATTERY_ELECTRIC_PRESSURE = 133;
+    public const int BATTERY_CCA = 134;
+    public const int ELECTRIC_SCALE_V_BLOCK_SLOT = 150;
+    public const int GROWLER_TESTER_SLOT = 151;
+    public const int PLUS_LEAD_LINE_BY_ELECTRIC_SCALE_SLOT = 152;
+    public const int MINUS_LEAD_LINE_BY_ELECTRIC_SCALE_SLOT = 153;
+    public const int SOLENOID_SWITCH_SLOT = 187;
+    public const int BATTERY_TESTER_PLUS_CABLE_GHOST_TABLE2 = 208;
+    public const int BATTERY_TESTER_PLUS_CABLE_SLOT = 208;
+    public const int BATTERY_TESTER_MINUS_CABLE_GHOST_TABLE2 = 209;
+    public const int BATTERY_TESTER_GHOST_TABLE_BY_BATTERY = 211;
+    public const int ELECTRIC_MOTOR_M_TERMINAL_SLOT = 216;
+    public const int S_TERMINAL_SLOT2 = 218;
+    public const int AMATURE_S_SLOT = 220;
+    public const int MULTIMETER_IN_FRONT_OF_BATTERY_SLOT = 225;
+    public const int BETWEEN_B_TERMINAL_AND_BATTERY_PLUS_TERMINAL2 = 227;
+    public const int BATTERY_BRACKET_BOLT_SLOT1 = 269;
+    public const int UNDER_COVER_CLIP_SLOT1 = 279;
+    public const int UNDER_COVER_CLIP_SLOT2 = 280;
+    public const int UNDER_COVER_CLIP_SLOT3 = 281;
+    public const int UNDER_COVER_CLIP_SLOT4 = 282;
+    public const int UNDER_COVER_CLIP_SLOT5 = 283;
+    public const int MULTIMETER_GHOST_TABLE_BY_BATTERY = 325;
+
+}
+
+/// <summary>
+/// 애니메이션관련
+/// </summary>
+public class A
+{
+    public const string ON = "ON";
+    public const string On = "On";
+    public const string OPEN = "OPEN";
+    public const string Open = "Open";
+    public const string open = "open";
+    public const string Blend = "Blend";
+    public const string Up = "Up";
+    public const string Move = "Move";
+    public const string Mid_Handle = "Mid_Handle";
+    public const string Up_Handle = "Up_Handle";
+    public const string OFF = "OFF";
+    public const string Handle = "Handle";
+    public const string Down_Handle = "Down_Handle";
+    public const string Down_Handle02 = "Down_Handle02";
+    public const string Pad = "Pad";
+    public const string V = "V";
+    public const string V_9 = "9V";
+    public const string V_10 = "10V";
+    public const string V_12 = "12V";
+    public const string V_12_Enter = "12V_Enter";
+    public const string Battery_Enter = "Battery_Enter";
+    public const string On_600 = "600_On";
+    public const string On_600_Enter = "600_On_Enter";
+    public const string Lamp_off = "Lamp_off";
+    public const string Lamp_on = "Lamp_on";
+    public const float ANI_VALUE_001 = 0.01f;
+    public const float ANI_VALUE_002 = 0.02f;
+    public const string ani_out = "out";
+    public const string ani_in = "in";
+    public const string start = "start";
+    public const string play = "play";
+
+}
+
+/// <summary>
+/// 툴관련 ID
+/// </summary>
+public class T
+{
+    public const int RATCHET_WRENCH = 0;
+    public const int TORQUE_WRENCH = 1;
+    public const int CLIP_REMOVER = 2; 
+    public const int LONG_NOSE_PLIER = 3;
+    public const int HINGE_WRENCH = 6;
+    public const int EXTENSION_BAR = 30;
+   
+}

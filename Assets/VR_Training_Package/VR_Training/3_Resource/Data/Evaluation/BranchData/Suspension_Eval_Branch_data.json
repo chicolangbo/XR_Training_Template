@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "ID": 0,
+      "BRANCH_ID": "2,6,7",
+      "NEXT_INDEX": 8,
+      "PARTS_ID": "Tool-3,Tool-8,Tool-0"
+    },
+    {
+      "ID": 1,
+      "BRANCH_ID": "9,15,17,19",
+      "NEXT_INDEX": 22,
+      "PARTS_ID": "Tool-2,[Tool-0_Tool-14],[Tool-0_Tool-14],Tool-7"
+    },
+    {
+      "ID": 2,
+      "BRANCH_ID": "69,70,71,72",
+      "NEXT_INDEX": 84,
+      "PARTS_ID": "[Tool-21_Tool-1],[Tool-19_Tool-1],Tool-1,[Tool-23_Tool-1]"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "mission_index": 37,
+      "tool_name": "19mm_combination_wrench",
+      "tool_id": "Tool-9",
+      "bolt_name": "front_lower_arm_b_01,front_lower_arm_b_02,front_lower_arm_n_01",
+      "slot_id": "Parts_Slot-8,Parts_Slot-9,Parts_Slot-10"
+    },
+    {
+      "mission_index": 52,
+      "tool_name": "17mm_combination_wrench",
+      "tool_id": "Tool-8",
+      "bolt_name": "front_lower_arm_castle_n_01,front_lower_arm_b_02,front_lower_arm_n_01",
+      "slot_id": "Parts_Slot-6,Parts_Slot-9,Parts_Slot-10"
+    },
+    {
+      "mission_index": 63,
+      "tool_name": "Ratchet_wrench, 19mm_socket, 19mm_combination_wrench",
+      "tool_id": "Tool-0,Tool-21,Tool-9",
+      "bolt_name": "front_lower_arm_b_01,front_lower_arm_castle_n_01",
+      "slot_id": "Parts_Slot-8,Parts_Slot-6"
+    },
+    {
+      "mission_index": 369,
+      "tool_name": "Torque_wrench, 19mm_socket, 19mm_combination_wrench",
+      "tool_id": "Tool-1,Tool-21,Tool-9",
+      "bolt_name": "front_lower_arm_b_01,front_lower_arm_castle_n_01",
+      "slot_id": "Parts_Slot-8,Parts_Slot-6"
+    },
+    {
+      "mission_index": 377,
+      "tool_name": "Torque_wrench,17mm_socket",
+      "tool_id": "Tool-1,Tool-19",
+      "bolt_name": "front_lower_arm_castle_n_01,front_lower_arm_b_02,front_lower_arm_n_01",
+      "slot_id": "Parts_Slot-6,Parts_Slot-9,Parts_Slot-10"
+    },
+    {
+      "mission_index": 388,
+      "tool_name": "Torque_wrench, 17mm_socket, 19mm_combination_wrench",
+      "tool_id": "Tool-1,Tool-19,Tool-9",
+      "bolt_name": "front_lower_arm_b_02,front_lower_arm_n_01",
+      "slot_id": "Parts_Slot-9,Parts_Slot-10"
+    },
+    {
+      "mission_index": 393,
+      "tool_name": "Torque_wrench, 17mm_socket, 19mm_combination_wrench",
+      "tool_id": "Tool-1,Tool-19,Tool-9",
+      "bolt_name": "front_lower_arm_b_02,front_lower_arm_n_01",
+      "slot_id": "Parts_Slot-9,Parts_Slot-10"
+    },
+    {
+      "mission_index": 440,
+      "tool_name": "17mm_combination_wrench",
+      "tool_id": "Tool-8",
+      "bolt_name": "front_lower_arm_castle_n_01,front_lower_arm_b_02,front_lower_arm_n_01",
+      "slot_id": "Parts_Slot-6,Parts_Slot-9,Parts_Slot-10"
+    },
+    {
+      "mission_index": 441,
+      "tool_name": "17mm_combination_wrench",
+      "tool_id": "Tool-8",
+      "bolt_name": "front_lower_arm_castle_n_01,front_lower_arm_b_02,front_lower_arm_n_01",
+      "slot_id": "Parts_Slot-6,Parts_Slot-9,Parts_Slot-10"
+    }
+  ]
+}

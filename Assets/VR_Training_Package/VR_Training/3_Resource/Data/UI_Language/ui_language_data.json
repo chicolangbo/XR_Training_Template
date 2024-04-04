@@ -1,0 +1,259 @@
+{
+  "data": [
+    {
+      "ID": 0,
+      "UI_TEXT_KR": "현재 과정",
+      "UI_TEXT_ENG": "Current Course"
+    },
+    {
+      "ID": 1,
+      "UI_TEXT_KR": "주의 사항",
+      "UI_TEXT_ENG": "precautions"
+    },
+    {
+      "ID": 2,
+      "UI_TEXT_KR": "부가 설명",
+      "UI_TEXT_ENG": "Additional explanation"
+    },
+    {
+      "ID": 3,
+      "UI_TEXT_KR": "전체 타이머 : ",
+      "UI_TEXT_ENG": "Full Timer : "
+    },
+    {
+      "ID": 4,
+      "UI_TEXT_KR": "현재 점수 :",
+      "UI_TEXT_ENG": "Current Score : "
+    },
+    {
+      "ID": 5,
+      "UI_TEXT_KR": "과정 타이머 :",
+      "UI_TEXT_ENG": "Course Timers : "
+    },
+    {
+      "ID": 6,
+      "UI_TEXT_KR": "휴식 타이머 : ",
+      "UI_TEXT_ENG": "break timer : "
+    },
+    {
+      "ID": 7,
+      "UI_TEXT_KR": "평가 결과",
+      "UI_TEXT_ENG": "Evaluation Results"
+    },
+    {
+      "ID": 8,
+      "UI_TEXT_KR": "감점 요소",
+      "UI_TEXT_ENG": "minus factor"
+    },
+    {
+      "ID": 9,
+      "UI_TEXT_KR": "감점 요인",
+      "UI_TEXT_ENG": "deduction factor"
+    },
+    {
+      "ID": 10,
+      "UI_TEXT_KR": "평가 항목",
+      "UI_TEXT_ENG": "Evaluation Items"
+    },
+    {
+      "ID": 11,
+      "UI_TEXT_KR": "감점",
+      "UI_TEXT_ENG": "minus point"
+    },
+    {
+      "ID": 12,
+      "UI_TEXT_KR": "총 점수 : ",
+      "UI_TEXT_ENG": "Total Score : "
+    },
+    {
+      "ID": 13,
+      "UI_TEXT_KR": "홈으로 이동",
+      "UI_TEXT_ENG": "Go to Home"
+    },
+    {
+      "ID": 14,
+      "UI_TEXT_KR": "시간 초과",
+      "UI_TEXT_ENG": "Timeout"
+    },
+    {
+      "ID": 15,
+      "UI_TEXT_KR": "공구선택",
+      "UI_TEXT_ENG": "Tool selection"
+    },
+    {
+      "ID": 16,
+      "UI_TEXT_KR": "잘못된 공구 사용",
+      "UI_TEXT_ENG": "Incorrect tool use"
+    },
+    {
+      "ID": 17,
+      "UI_TEXT_KR": "배터리 minus  단자 분리 미완료\n배터리 plus 단자 분리 미완료",
+      "UI_TEXT_ENG": "Battery minus terminal disconnection incomplete\nBattery plus terminal disconnection incomplete"
+    },
+    {
+      "ID": 18,
+      "UI_TEXT_KR": "배터리 브라켓 장착",
+      "UI_TEXT_ENG": "Battery Bracket Mounting"
+    },
+    {
+      "ID": 19,
+      "UI_TEXT_KR": "불필요한 작업 진행",
+      "UI_TEXT_ENG": "Unnecessary progress"
+    },
+    {
+      "ID": 20,
+      "UI_TEXT_KR": "메인 리프트 업 미완료",
+      "UI_TEXT_ENG": "Main lift up incomplete"
+    },
+    {
+      "ID": 21,
+      "UI_TEXT_KR": "로워 암 볼 조인트 분리 미완료",
+      "UI_TEXT_ENG": "Lower arm ball joint disconnected incomplete"
+    },
+    {
+      "ID": 22,
+      "UI_TEXT_KR": "로워 암 볼트 및 너트 장착 미완료\n로워 암 볼트 장착 미완료",
+      "UI_TEXT_ENG": "Lower arm bolt and nut installation incomplete\nLower arm bolt installation incomplete"
+    },
+    {
+      "ID": 23,
+      "UI_TEXT_KR": "로워 암 볼트 및 너트 공차 체결 미완료",
+      "UI_TEXT_ENG": "Lower arm bolt and nut tolerance not completed"
+    },
+    {
+      "ID": 24,
+      "UI_TEXT_KR": "로워 암 볼트 공차 체결 미완료",
+      "UI_TEXT_ENG": "Lower arm bolt tolerance not completed"
+    },
+    {
+      "ID": 25,
+      "UI_TEXT_KR": "스트러트 어셈블리 볼트 및 너트 공차 체결 미완료",
+      "UI_TEXT_ENG": "Tightening of strut assembly bolts and nuts tolerance not completed"
+    },
+    {
+      "ID": 26,
+      "UI_TEXT_KR": "브레이크 고정 미완료 ",
+      "UI_TEXT_ENG": "Brake retention incomplete"
+    },
+    {
+      "ID": 27,
+      "UI_TEXT_KR": "스윙 작업 미완료",
+      "UI_TEXT_ENG": "Swing operation not completed"
+    },
+    {
+      "ID": 28,
+      "UI_TEXT_KR": "브레이크 고정 제거 미완료",
+      "UI_TEXT_ENG": "Brake Retention Removal Incomplete"
+    },
+    {
+        "ID": 29,
+        "UI_TEXT_KR": "조이스틱- 사용자의 이동을 조작합니다.\n트리거- 트리거를 통해 워프 조작이 가능합니다.\n그립버튼 – 공구 및 부품을 잡을 수 있습니다.\n홈 버튼 -  설정 창이 나타납니다.",
+        "UI_TEXT_ENG": "Joystick"
+    },
+    {
+      "ID": 30,
+      "UI_TEXT_KR": "트리거",
+      "UI_TEXT_ENG": "Trigger"
+    },
+    {
+      "ID": 31,
+      "UI_TEXT_KR": "그립 버튼",
+      "UI_TEXT_ENG": "Grip Button"
+    },
+    {
+      "ID": 32,
+      "UI_TEXT_KR": "홈 버튼",
+      "UI_TEXT_ENG": "Home button"
+    },
+    {
+      "ID": 33,
+      "UI_TEXT_KR": "종료 버튼",
+      "UI_TEXT_ENG": "the exit button"
+    },
+    {
+      "ID": 34,
+      "UI_TEXT_KR": "다시 하기",
+      "UI_TEXT_ENG": "Do it again"
+    },
+    {
+      "ID": 35,
+      "UI_TEXT_KR": "과정선택  으로 이동",
+      "UI_TEXT_ENG": "Go to Course Selection"
+    },
+    {
+      "ID": 36,
+      "UI_TEXT_KR": "실습으로  이동",
+      "UI_TEXT_ENG": "Go to Lab"
+    },
+    {
+      "ID": 37,
+      "UI_TEXT_KR": "유압식 현가장치 정비",
+      "UI_TEXT_ENG": "Hydraulic suspension system"
+    },
+    {
+      "ID": 38,
+      "UI_TEXT_KR": "튜토리얼",
+      "UI_TEXT_ENG": "tutorial"
+    },
+    {
+      "ID": 39,
+      "UI_TEXT_KR": "실습",
+      "UI_TEXT_ENG": "Practice"
+    },
+    {
+      "ID": 40,
+      "UI_TEXT_KR": "평가",
+      "UI_TEXT_ENG": "Evaluation"
+    },
+    {
+      "ID": 41,
+      "UI_TEXT_KR": "배터리",
+      "UI_TEXT_ENG": "Battery"
+    },
+    {
+      "ID": 42,
+      "UI_TEXT_KR": "시동 전동기 정비",
+      "UI_TEXT_ENG": "starting motor"
+    },
+    {
+      "ID": 43,
+      "UI_TEXT_KR": "과정 선택으로 이동",
+      "UI_TEXT_ENG": "Go to Course Selection"
+    },
+    {
+      "ID": 44,
+      "UI_TEXT_KR": "종료 하시겠습니까?",
+      "UI_TEXT_ENG": "Are you sure you want to exit?"
+    },
+    {
+      "ID": 45,
+      "UI_TEXT_KR": "예",
+      "UI_TEXT_ENG": "Yes"
+    },
+    {
+      "ID": 46,
+      "UI_TEXT_KR": "아니오",
+      "UI_TEXT_ENG": "No."
+    },
+    {
+      "ID": 47,
+      "UI_TEXT_KR": "시동 장치 정비",
+      "UI_TEXT_ENG": "Starter."
+    },
+    {
+      "ID": 48,
+      "UI_TEXT_KR": "진행 사항",
+      "UI_TEXT_ENG": "progress"
+    },
+    {
+      "ID": 49,
+      "UI_TEXT_KR": "내용",
+      "UI_TEXT_ENG": "Content"
+    },
+    {
+      "ID": 50,
+      "UI_TEXT_KR": "합격",
+      "UI_TEXT_ENG": "Accepted"
+    }
+  ]
+}
