@@ -139,7 +139,7 @@ public class XR_ControllerBase : MonoBehaviour
         //CameraUIToggle();
 
         //height adjust
-        XRRigYAdjust();
+        //XRRigYAdjust();
 
     }
 
