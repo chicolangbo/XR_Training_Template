@@ -114,6 +114,7 @@ public class XR_ControllerBase : MonoBehaviour
 
         if (leftCont.isValid && rightCont.isValid && inputDeviceControllers.Count <= 0)
         {
+            Debug.Log("xr_controllerBase");
             inputDeviceControllers.Add(leftCont);
             inputDeviceControllers.Add(rightCont);
             SetControllers(); // scene controller
@@ -382,9 +383,9 @@ public class XR_ControllerBase : MonoBehaviour
         return gripValueLeft;
     }
 
-    public (XRController cont,InputDevice inputDevice,bool isGripedRight,bool isGripedLeft,string tag) IsGrip(Collider col)
+    public (XRController cont, UnityEngine.XR.InputDevice inputDevice,bool isGripedRight,bool isGripedLeft,string tag) IsGrip(Collider col)
     {
-        (XRController cont, InputDevice inputDevice, bool isGripedRight, bool isGripedLeft,string tag) elements;
+        (XRController cont, UnityEngine.XR.InputDevice inputDevice, bool isGripedRight, bool isGripedLeft,string tag) elements;
         if (col.tag == "RightController")
         {
             elements.cont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.RightController);
@@ -400,6 +401,7 @@ public class XR_ControllerBase : MonoBehaviour
         elements.isGripedRight = GetGripStatusRight();
         elements.isGripedLeft = GetGripStatusLeft();
         elements.tag = col.tag;
+        Debug.Log($"is grip 함수 작동 : {elements}");
         return elements;
     }
 

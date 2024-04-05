@@ -83,8 +83,10 @@ public class Pattern_024 : PatternBase
         {
             if(IsMatchPartsID(goalData.partType, goalData.id,partsID))
             {
-                if(IsContainController(col.tag))
+                if (IsContainController(col.tag))
                 {
+                    Debug.Log("IsContainController");
+
                     if (goalData.id == 44 || goalData.id == 393 || goalData.id == 394) //MovingInteraction44 (차 자동움직임)
                     {
                         Debug.Log("MovingInteraction44");
