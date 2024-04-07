@@ -15,7 +15,7 @@ public class Tool_Nose : UsingToolBase
     public  PartsID part;
     Animator ani; 
 
-    XRController rightCont;
+    ActionBasedController rightCont;
 
     float originGap; 
 

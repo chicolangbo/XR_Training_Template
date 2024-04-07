@@ -13,7 +13,7 @@ public class Tools_RatchetWrench_ : UsingToolBase
     EnumDefinition.Direction direction = EnumDefinition.Direction.Y;
     public float set_rotation_Count;
     public Image ui_progress;
-    XRController rightCont;
+    ActionBasedController rightCont;
     int controllerRotCount;
     int boltRotCount;
     float pervContAngle, curContAngle, curBoltAngle, speed;

@@ -15,7 +15,7 @@ public class Tool_TorqueController : MonoBehaviour
     public float value = 0;
 
     InputDevice inputDeviceLeft;
-    XRController xrContLeft;
+    ActionBasedController xrContLeft;
     Transform controller;
 
     bool isGrab = false;

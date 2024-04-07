@@ -14,7 +14,7 @@ public class Pattern_049 : PatternBase
     bool isSelect = false;
     float rotX = 0;
     float originZ = 0;
-    XRController right = null;
+    ActionBasedController right = null;
     const float ROTATION_VALUE = 0.3f;
     const float DELAY_VALUE = 0.1f; 
     void Start()

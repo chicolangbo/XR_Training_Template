@@ -36,7 +36,7 @@ public class Tool_HingeWrench : UsingToolBase
         Init();
     }
 
-    XRController rightCont;
+    ActionBasedController rightCont;
 
 
     void Init()

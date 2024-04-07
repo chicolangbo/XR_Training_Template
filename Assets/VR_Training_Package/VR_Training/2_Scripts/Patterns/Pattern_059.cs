@@ -37,7 +37,7 @@ public class Pattern_059 : PatternBase
     {
         if (enableEvent)
         {
-            XRController con = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.RightController);
+            ActionBasedController con = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.RightController);
             if (!col.gameObject.Equals(con.gameObject)) return; 
             
             //시동 아이콘  
@@ -68,7 +68,7 @@ public class Pattern_059 : PatternBase
         {
             GameObject obj = Instantiate(Resources.Load(IGNITE_PATH)) as GameObject;
             ignite = obj.GetComponent<PartsID>(); 
-            XRController leftcont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.LeftController);
+            ActionBasedController leftcont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.LeftController);
             ColliderEnable(ignite, true);
             look = new GameObject().transform;
             look.SetParent(leftcont.transform);

@@ -15,7 +15,7 @@ public class Tool_Remover : UsingToolBase
     public Transform target;
     public PartsID part;
     public Transform pivot;
-    XRController rightCont;
+    ActionBasedController rightCont;
     float targetDegree,updateGap;
     float maxDegree = 27f;
     float degree = 0;

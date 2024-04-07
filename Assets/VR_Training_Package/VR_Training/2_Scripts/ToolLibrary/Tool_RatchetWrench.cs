@@ -36,7 +36,7 @@ public class Tool_RatchetWrench : UsingToolBase
         Init();
     }
 
-    XRController rightCont;
+    ActionBasedController rightCont;
 
 
     void Init()

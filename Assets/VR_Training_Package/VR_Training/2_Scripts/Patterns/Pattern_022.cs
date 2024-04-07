@@ -181,7 +181,7 @@ public class Pattern_022 : PatternBase
         if (look == null)
         {
             recycle = PartsTypeObjectData.instance.GetPartIdObject(EnumDefinition.PartsType.ICON, 0);  //Instantiate(Resources.Load("Prefabs/Recycle") as GameObject);
-            XRController leftcont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.LeftController);
+            ActionBasedController leftcont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.LeftController);
             ColliderEnable(recycle, true);
             look = new GameObject().transform;
             look.SetParent(leftcont.transform);

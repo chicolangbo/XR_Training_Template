@@ -10,7 +10,7 @@ public class XR_ControllerBase : MonoBehaviour
     // left , right
     List<InputDevice> inputDeviceControllers = new List<InputDevice>();
     // left , right
-    List<XRController> controllers = new List<XRController>();
+    List<ActionBasedController> controllers = new List<ActionBasedController>();
     // controller animator
     //List<Animator> controllerAnimator = new List<Animator>();
 
@@ -102,7 +102,6 @@ public class XR_ControllerBase : MonoBehaviour
            
         else
             return new InputDevice();
-
     }
 
     private void Update()
@@ -112,7 +111,8 @@ public class XR_ControllerBase : MonoBehaviour
         if (!rightCont.isValid)
             rightCont = SetInputDeviceController(EnumDefinition.ControllerType.RightController);
 
-        if (leftCont.isValid && rightCont.isValid && inputDeviceControllers.Count <= 0)
+        //if (leftCont.isValid && rightCont.isValid && inputDeviceControllers.Count <= 0)
+        if(inputDeviceControllers.Count <= 0 || controllers.Count <=0)
         {
             Debug.Log("xr_controllerBase");
             inputDeviceControllers.Add(leftCont);
@@ -348,12 +348,21 @@ public class XR_ControllerBase : MonoBehaviour
 
     void SetControllers()
     {
-        controllers.Add(UtilityMethod.GetController(EnumDefinition.ControllerType.LeftController));
-        controllers.Add(UtilityMethod.GetController(EnumDefinition.ControllerType.RightController));
+        //controllers.Add(UtilityMethod.GetController(EnumDefinition.ControllerType.LeftController));
+        //controllers.Add(UtilityMethod.GetController(EnumDefinition.ControllerType.RightController));
+        //if(controllers.Count <= 0)
+        //{
+        if(GameObject.FindGameObjectWithTag("LeftController") != null || GameObject.FindGameObjectWithTag("RightController") != null)
+        {
+            controllers.Add(GameObject.FindGameObjectWithTag("LeftController").GetComponent<ActionBasedController>());
+            controllers.Add(GameObject.FindGameObjectWithTag("RightController").GetComponent<ActionBasedController>());
+        }
+        //}
     }
 
-    public XRController GetController(EnumDefinition.ControllerType controllerType)
+    public ActionBasedController GetController(EnumDefinition.ControllerType controllerType)
     {
+        Debug.Log($"컨트롤러 타입 : {(int)controllerType}, 컨트롤러 개수 : {controllers.Count}");
         return controllers[(int)controllerType];
     }
 
@@ -383,18 +392,18 @@ public class XR_ControllerBase : MonoBehaviour
         return gripValueLeft;
     }
 
-    public (XRController cont, UnityEngine.XR.InputDevice inputDevice,bool isGripedRight,bool isGripedLeft,string tag) IsGrip(Collider col)
+    public (ActionBasedController cont, UnityEngine.XR.InputDevice inputDevice,bool isGripedRight,bool isGripedLeft,string tag) IsGrip(Collider col)
     {
-        (XRController cont, UnityEngine.XR.InputDevice inputDevice, bool isGripedRight, bool isGripedLeft,string tag) elements;
+        (ActionBasedController cont, UnityEngine.XR.InputDevice inputDevice, bool isGripedRight, bool isGripedLeft,string tag) elements;
         if (col.tag == "RightController")
         {
-            elements.cont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.RightController);
+            elements.cont = GetController(EnumDefinition.ControllerType.RightController);
             elements.inputDevice = XR_ControllerBase.instance.GetInputDeviceController(EnumDefinition.ControllerType.RightController);
             
         }
         else
         {
-            elements.cont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.LeftController);
+            elements.cont = GetController(EnumDefinition.ControllerType.LeftController);
             elements.inputDevice = XR_ControllerBase.instance.GetInputDeviceController(EnumDefinition.ControllerType.LeftController);
         }
 

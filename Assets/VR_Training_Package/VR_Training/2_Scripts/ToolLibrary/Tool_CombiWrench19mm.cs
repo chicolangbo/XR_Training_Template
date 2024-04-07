@@ -22,7 +22,7 @@ public class Tool_CombiWrench19mm : UsingToolBase
     public float progress;
     public Image ui_progress;
 
-    XRController rightCont;
+    ActionBasedController rightCont;
 
     double curProgressValue;
     double prevProgressValue;
