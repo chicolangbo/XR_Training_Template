@@ -141,6 +141,7 @@ public class XR_DirectInteractor_Custom : XRDirectInteractor
 
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
+        Debug.Log("XR_DirectInteractor_Custom : OnSelectEntering");
         base.OnSelectEntering(args);
         DoorActionEnter(args); 
         if (args.interactableObject.transform.TryGetComponent<PartsID>(out PartsID partID))

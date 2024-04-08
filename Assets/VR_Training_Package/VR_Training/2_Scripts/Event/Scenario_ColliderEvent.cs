@@ -33,6 +33,7 @@ public class Scenario_ColliderEvent : MonoBehaviour
             // 평가 터치 
             if(other.tag == "RightController")
             {
+                Debug.Log("Scenario_ColliderEvent : OnTriggerEnter");
                 Scenario_EventManager.instance.RunEvent(CallBackEventType.TYPES.OnGrabSelect, partsID, EnumDefinition.ControllerType.RightController);
             }
         }
