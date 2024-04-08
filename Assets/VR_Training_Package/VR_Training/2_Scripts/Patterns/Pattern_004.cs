@@ -43,9 +43,11 @@ public class Pattern_004 : PatternBase
                     contR = XR_ControllerBase.instance.GetInputDeviceController(EnumDefinition.ControllerType.RightController);
 
                     contL.TryGetFeatureValue(CommonUsages.gripButton, out bool isGrabLValue);
+                    Debug.Log($"왼손 그랩 : {isGrabLValue}");
                     isGrabL = isGrabLValue;
 
                     contR.TryGetFeatureValue(CommonUsages.gripButton, out bool isGrabRValue);
+                    Debug.Log($"오른손 그랩 : {isGrabRValue}");
                     isGrabR = isGrabRValue;
 
                     if (isGrabL)
@@ -81,10 +83,12 @@ public class Pattern_004 : PatternBase
 
                     if (isGrabL && isGrabR)
                     {
+                        Debug.Log("둘다 들고 있음1");
                         var acData = Secnario_UserContext.instance.actionData;
                         if(acData.cur_r_grabParts != null && acData.cur_l_grabParts != null)
                         {
-                            if(goalDatas.Contains(acData.cur_l_grabParts) && goalDatas.Contains(acData.cur_r_grabParts))
+                            Debug.Log("둘다 들고 있음2");
+                            if (goalDatas.Contains(acData.cur_l_grabParts) && goalDatas.Contains(acData.cur_r_grabParts))
                             {
                                 MissionClear();
                             }

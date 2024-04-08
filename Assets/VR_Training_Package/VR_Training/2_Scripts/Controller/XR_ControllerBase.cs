@@ -111,8 +111,8 @@ public class XR_ControllerBase : MonoBehaviour
         if (!rightCont.isValid)
             rightCont = SetInputDeviceController(EnumDefinition.ControllerType.RightController);
 
-        //if (leftCont.isValid && rightCont.isValid && inputDeviceControllers.Count <= 0)
-        if(inputDeviceControllers.Count <= 0 || controllers.Count <=0)
+        if (leftCont.isValid && rightCont.isValid && inputDeviceControllers.Count <= 0)
+        //if(inputDeviceControllers.Count <= 0 || controllers.Count <=0)
         {
             Debug.Log("xr_controllerBase");
             inputDeviceControllers.Add(leftCont);
