@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OnHoverEntered()
     {
-        
+        Debug.Log($"{gameObject.name}OnHoverEntered");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnHoverExited()
     {
-        
+        Debug.Log($"{gameObject.name}OnHoverExited");
+    }
+    public void OnSelectEntered()
+    {
+        Debug.Log($"{gameObject.name}OnSelectEntered");
+    }
+    public void OnSelectExited()
+    {
+        Debug.Log($"{gameObject.name}OnSelectExited");
     }
 }

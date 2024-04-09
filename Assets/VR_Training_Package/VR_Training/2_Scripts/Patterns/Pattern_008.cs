@@ -36,6 +36,7 @@ public class Pattern_008 : PatternBase
 
     void OnSocketSeparateEvent(PartsID partsID)
     {
+        Debug.Log("P8 OnSocketSeparateEvent");
         if (enableEvent)
         {
             if (IsContainsTool() && IsMatchSocket())

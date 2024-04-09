@@ -242,6 +242,7 @@ public class XR_DirectInteractor_Custom : XRDirectInteractor
             else
                 Secnario_UserContext.instance.actionData.cur_l_grabParts = grabParts;
         }
+        //Debug.Log($"¿À¸¥¼Õ ±×·¦ ÆÄÃ÷ {Secnario_UserContext.instance.actionData.cur_r_grabParts} / ¿Þ¼Õ ±×·¦ ÆÄÃ÷ {Secnario_UserContext.instance.actionData.cur_l_grabParts}");
     }
 
 
