@@ -55,6 +55,28 @@ public class SocketWithID_Inventory : XRSocketInteractor
         }
     }
 
+    private void Update()
+    {
+        if(partsIDList.Count == 0)
+        {
+            List<PartsID> partsAll = PartsTypeObjectData.instance.GetPartsIDByType(EnumDefinition.PartsType.PARTS);
+            if (PartsTypeObjectData.instance != null && partsAll.Count != 0)
+            {
+                for (int i = 0; i < partsAll.Count; i++)
+                {
+                    for (int j = 0; j < idList.Length; j++)
+                    {
+                        if (partsAll[i].id == idList[j])
+                        {
+                            partsIDList.Add(partsAll[i]);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     public override bool CanHover(XRBaseInteractable interactable)
     {
