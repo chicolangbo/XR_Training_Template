@@ -41,6 +41,18 @@ public class PartsTypeObjectData : MonoBehaviour
     {
         GetPartsID_List();
         GetTypeListObjects();
+        SearchPartsGameObject(226);
+    }
+
+    public void SearchPartsGameObject(int num)
+    {
+        foreach(var part in partId_List)
+        {
+            if(part.id == num)
+            {
+                Debug.Log("Ã£´Â ÆÄÃ÷ : " + part.gameObject.name);
+            }
+        }
     }
 
     void GetTypeListObjects()

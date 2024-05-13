@@ -68,17 +68,21 @@ public class Pattern_019 : PatternBase
     {
         if (enableEvent)
         {
+            Debug.Log("P 19 OnSocketMatchEvent" + partsID.id);
             if(partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS)
             {
+                Debug.Log("P 19 in 1");
                 if (isSelect == false)
                 {
                     if (currentIndex >= goalDatas.Count) return;
 
                     var cur_parts = goalDatas[currentIndex];
+                    Debug.Log("P 19 in 2" + cur_parts.id);
                     if (partsID == cur_parts)
                     {
+                        Debug.Log("P 19 in 3");
                         select_parts = partsID;
-                        SetTransformInventory(cur_parts);
+                        //SetTransformInventory(cur_parts);
                         HighlightOff(cur_parts);
                         GuideArrowEnable(cur_parts, false);
 
@@ -174,7 +178,12 @@ public class Pattern_019 : PatternBase
 
     void SetTransformInventory(PartsID parts)
     {
+        parts.transform.position = goalData_inventory.transform.position;
         parts.transform.SetParent(goalData_inventory.transform);
+        parts.transform.position = new Vector3(0, 0, 0);
+        parts.transform.localPosition = new Vector3(0, 0, 0);
+        Debug.Log("pos : " + parts.transform.position);
+        Debug.Log("local pos : " + parts.transform.localPosition);
     }
 
 
