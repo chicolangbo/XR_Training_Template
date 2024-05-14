@@ -5,6 +5,9 @@ using System.Linq;
 using System;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using System.Data.SqlClient;
+using UnityEditor.Searcher;
+using UnityEngine.XR.Interaction.Toolkit.Transformers;
 /// <summary>
 /// 
 /// 고정볼트을 테이블에 배치해주세요 -> ALL 한번에
@@ -32,6 +35,7 @@ public class Pattern_103 : PatternBase
 
     const float fDelay = 0.1f;
     const float fDelayClear = 0.2f;
+    bool isGrabed = false;
 
     void Start()
     {
@@ -56,6 +60,7 @@ public class Pattern_103 : PatternBase
     // 매치 되었을때마다 호출
     void SlotMatch_Event(PartsID partId)
     {
+        Debug.Log("SlotMatch_Event");
         if (enableEvent)
         {
             currentPartID = partId;
@@ -99,6 +104,7 @@ public class Pattern_103 : PatternBase
 
     void CombinationEvent()
     {
+        Debug.Log("CombinationEvent");
         if (goalData3_count > 0 && currentIndex == goalData3_count)
         {
             EnableEvent(false);            
@@ -122,7 +128,7 @@ public class Pattern_103 : PatternBase
                 XRGrabEnable(goalData.p1_partsDatas[currentIndex].PartsIdObj, true);
             }
         }
-    }   
+    }
 
     void AllColliderDisable()
     {
@@ -133,7 +139,11 @@ public class Pattern_103 : PatternBase
 
     public void HighlightOn(int index)
     {
-        goalData.hl_partsDatas[index].PartsIdObj.highlighter.HighlightOn();
+        var part = goalData.hl_partsDatas[index].PartsIdObj;
+        part.highlighter.HighlightOn();
+        part.GetComponent<XRGrabInteractable>().enabled = true;
+        part.GetComponent<XRBaseGrabTransformer>().enabled = true;
+        part.transform.SetParent(null);
     }
     public void HighlightOff(int index)
     {
@@ -274,6 +284,7 @@ public class Pattern_103 : PatternBase
         part.transform.SetParent(goalpart.transform);
         part.transform.localPosition = Vector3.zero;
         part.transform.localRotation = Quaternion.identity;
+
         //SocketEnable(part, false);
         ColliderEnable(part, false);
         XRGrabEnable(part, false);
