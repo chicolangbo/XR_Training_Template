@@ -68,19 +68,15 @@ public class Pattern_019 : PatternBase
     {
         if (enableEvent)
         {
-            Debug.Log("P 19 OnSocketMatchEvent" + partsID.id);
-            if(partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS)
+            if(partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS) // socketInteractor 사용 코드로 변경하기
             {
-                Debug.Log("P 19 in 1");
                 if (isSelect == false)
                 {
                     if (currentIndex >= goalDatas.Count) return;
 
                     var cur_parts = goalDatas[currentIndex];
-                    Debug.Log("P 19 in 2" + cur_parts.id);
                     if (partsID == cur_parts)
                     {
-                        Debug.Log("P 19 in 3");
                         select_parts = partsID;
                         //SetTransformInventory(cur_parts);
                         HighlightOff(cur_parts);

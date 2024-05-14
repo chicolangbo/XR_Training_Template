@@ -15,7 +15,7 @@ public class Tool_Remover : UsingToolBase
     public Transform target;
     public PartsID part;
     public Transform pivot;
-    ActionBasedController rightCont;
+    GameObject rightCont;
     float targetDegree,updateGap;
     float maxDegree = 27f;
     float degree = 0;
@@ -53,6 +53,7 @@ public class Tool_Remover : UsingToolBase
         SetEvents();
         targetDegree = -20;
         updateGap = 0;
+        tr_controller = transform;
     }
 
 
@@ -69,7 +70,10 @@ public class Tool_Remover : UsingToolBase
 
         if (XR_ControllerBase.instance.isControllerReady)
         {
-            rightCont = XR_ControllerBase.instance.GetController(EnumDefinition.ControllerType.RightController);
+            if(rightCont == null)
+            {
+                rightCont = GameObject.FindGameObjectWithTag("RightController");
+            }
             tr_controller = rightCont.transform;
         }
 
