@@ -66,9 +66,10 @@ public class Pattern_019 : PatternBase
 
     public void OnSocketMatchEvent(PartsID partsID)
     {
+        Debug.Log("OnSocketMatchEvent");
         if (enableEvent)
         {
-            if(partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS) // socketInteractor 사용 코드로 변경하기
+            if(partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS)
             {
                 if (isSelect == false)
                 {
@@ -82,8 +83,13 @@ public class Pattern_019 : PatternBase
                         HighlightOff(cur_parts);
                         GuideArrowEnable(cur_parts, false);
 
+                        // 5/14
+                        // set parent to inventory & adjust position
+                        cur_parts.transform.SetParent(goalData_inventory.transform);
+                        cur_parts.transform.localPosition = Vector3.zero;
                     }
                 }
+
 
                 isSelect = true;
             }
@@ -110,7 +116,7 @@ public class Pattern_019 : PatternBase
                             isSelect = false;
                             //오른손 그립시 파츠 딸려가는거 방지 
                             //StartCoroutine(ControllerReset());
-                            Secnario_UserContext.instance.inventoryData.AddData(select_parts);   
+                            //Secnario_UserContext.instance.inventoryData.AddData(select_parts);   
                             currentIndex++;
 
                             if (currentIndex >= goalDatas.Count)
