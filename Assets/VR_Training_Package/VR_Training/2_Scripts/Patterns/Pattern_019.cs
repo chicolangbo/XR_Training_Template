@@ -21,6 +21,8 @@ public class Pattern_019 : PatternBase
     const float CONTROLLER_RESET_DELAY = 0.1f;
     const float DelayColliderAndGrabOff_DELAY = 0.2f;
     const float DelayClear_DELAY = 0.3f;
+
+    private SocketWithID_Inventory inventory;
     void Start()
     {
         AddEvent();
@@ -67,6 +69,13 @@ public class Pattern_019 : PatternBase
     public void OnSocketMatchEvent(PartsID partsID)
     {
         Debug.Log("OnSocketMatchEvent");
+
+        if(inventory == null)
+        {
+            inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<SocketWithID_Inventory>();
+            inventory.keepSelectedTargetValid = false;
+        }
+
         if (enableEvent)
         {
             if(partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS)
@@ -74,6 +83,7 @@ public class Pattern_019 : PatternBase
                 if (isSelect == false)
                 {
                     if (currentIndex >= goalDatas.Count) return;
+
 
                     var cur_parts = goalDatas[currentIndex];
                     if (partsID == cur_parts)
@@ -85,8 +95,9 @@ public class Pattern_019 : PatternBase
 
                         // 5/14
                         // set parent to inventory & adjust position
-                        cur_parts.transform.SetParent(goalData_inventory.transform);
+                        cur_parts.transform.SetParent(inventory.transform);
                         cur_parts.transform.localPosition = Vector3.zero;
+                        cur_parts.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
                     }
                 }
 
@@ -245,6 +256,7 @@ public class Pattern_019 : PatternBase
         SetNullObj(goalData_inventory);
         SetNullObj(goalDatas);
         SetNullObj(goalDatas_hl);
+        inventory.keepSelectedTargetValid = true;
     }
 
 

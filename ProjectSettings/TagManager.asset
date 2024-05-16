@@ -9,6 +9,12 @@ TagManager:
   - Destroyer
   - MiniWorldCamera
   - Water
+  - LeftController
+  - RightController
+  - ToolHandle
+  - Adjust
+  - RightHandModel
+  - Inventory
   layers:
   - Default
   - TransparentFX
