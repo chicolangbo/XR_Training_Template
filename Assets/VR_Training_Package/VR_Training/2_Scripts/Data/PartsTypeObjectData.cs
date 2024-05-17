@@ -41,7 +41,7 @@ public class PartsTypeObjectData : MonoBehaviour
     {
         GetPartsID_List();
         GetTypeListObjects();
-        SearchPartsGameObject(226);
+        SearchPartsGameObject(293);
     }
 
     public void SearchPartsGameObject(int num)

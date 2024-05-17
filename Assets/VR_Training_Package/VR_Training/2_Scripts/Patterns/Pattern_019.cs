@@ -77,7 +77,7 @@ public class Pattern_019 : PatternBase
             inventory.keepSelectedTargetValid = false;
         }
 
-        if (enableEvent && partsID.id != 240 && partsID.id != 248 && partsID.id != 259)
+        if (enableEvent && partsID.id != 240 && partsID.id != 248 && partsID.id != 259 && partsID.id != 270 && partsID.id != 279)
         {
             if (partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS)
             {

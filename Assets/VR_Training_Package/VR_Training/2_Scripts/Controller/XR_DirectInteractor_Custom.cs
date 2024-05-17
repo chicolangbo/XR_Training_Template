@@ -149,8 +149,9 @@ public class XR_DirectInteractor_Custom : XRDirectInteractor
             grabParts = partID;
             AdjustPos(partID);
             //한손에 툴쥐고있을때 다른손으로 끌려가는것 방지
-            TemporaryDisableGrab(partID); 
+            TemporaryDisableGrab(partID);
             //partID.transform.localEulerAngles = new Vector3(0, 90, 0);
+            Debug.Log("XR_DirectInteractor_Custom : OnSelectEntering");
             Scenario_EventManager.instance.RunEvent(CallBackEventType.TYPES.OnGrabSelect, partID, controllerType);
             //Scenario_EventManager.instance.grabInteractableSelectEvent.Invoke(partID, controllerType);
             SetPartsID();

@@ -175,9 +175,8 @@ public class Pattern_004 : PatternBase
                 goalDatas[0].transform.SetParent(parent.transform);
                 goalDatas[1].transform.SetParent(parent.transform);
 
-
-                GameObject leftHand = GameObject.Find("LeftHand Controller");
-                leftHand.GetComponent<XR_DirectInteractor_Custom>().enabled = true;
+                GameObject leftHand = GameObject.FindGameObjectWithTag("LeftController");
+                leftHand.GetComponentInChildren<XR_DirectInteractor_Custom>().enabled = true;
             }
         }
     }

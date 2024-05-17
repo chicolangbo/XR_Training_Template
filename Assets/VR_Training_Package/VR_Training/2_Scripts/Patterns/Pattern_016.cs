@@ -49,6 +49,7 @@ public class Pattern_016 : PatternBase
             {
                 return;
             }
+            Debug.Log("GrabSelectEvent");
 
             if (partsID == goalData_handle)
             {
