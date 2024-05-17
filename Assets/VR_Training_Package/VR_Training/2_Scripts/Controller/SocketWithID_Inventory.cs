@@ -144,6 +144,16 @@ public class SocketWithID_Inventory : XRSocketInteractor
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("OnTriggerEnter");
+        var part = other.GetComponent<PartsID>();
+        if (part != null)
+        {
+            Scenario_EventManager.instance.RunEvent(CallBackEventType.TYPES.OnSocketTriggerInventory, part);
+        }
+    }
+
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {

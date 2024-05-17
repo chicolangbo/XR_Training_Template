@@ -37,13 +37,14 @@ public class Pattern_019 : PatternBase
     {
         //Scenario_EventManager.instance.AddCallBackEvent<PartsID, EnumDefinition.ControllerType>(CallBackEventType.TYPES.OnGrabSelect, GrabSelectEvent);
         Scenario_EventManager.instance.AddCallBackEvent<PartsID>(CallBackEventType.TYPES.OnSocketMatchInventory, OnSocketMatchEvent);
+        Scenario_EventManager.instance.AddCallBackEvent<PartsID>(CallBackEventType.TYPES.OnSocketTriggerInventory, OnSocketTriggerInventory);
     }
 
     void RemoveEvent()
     {
         //Scenario_EventManager.instance.RemoveCallBackEvent<PartsID, EnumDefinition.ControllerType>(CallBackEventType.TYPES.OnGrabSelect, GrabSelectEvent);
         Scenario_EventManager.instance.RemoveCallBackEvent<PartsID>(CallBackEventType.TYPES.OnSocketMatchInventory, OnSocketMatchEvent);
-
+        Scenario_EventManager.instance.RemoveCallBackEvent<PartsID>(CallBackEventType.TYPES.OnSocketTriggerInventory, OnSocketTriggerInventory);
     }
 
     //public void GrabSelectEvent(PartsID partsID, EnumDefinition.ControllerType controllerType)
@@ -65,6 +66,50 @@ public class Pattern_019 : PatternBase
     //        }
     //    }
     //}
+
+    public void OnSocketTriggerInventory(PartsID partsID)
+    {
+        Debug.Log("OnSocketTriggerInventory");
+
+        if (inventory == null)
+        {
+            inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<SocketWithID_Inventory>();
+            inventory.keepSelectedTargetValid = false;
+        }
+
+        if (enableEvent && partsID.id != 240 && partsID.id != 248 && partsID.id != 259)
+        {
+            if (partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS)
+            {
+                if (isSelect == false)
+                {
+                    if (currentIndex >= goalDatas.Count) return;
+
+
+                    var cur_parts = goalDatas[currentIndex];
+                    if (partsID == cur_parts)
+                    {
+                        select_parts = partsID;
+                        //SetTransformInventory(cur_parts);
+                        HighlightOff(cur_parts);
+                        GuideArrowEnable(cur_parts, false);
+
+                        // 5/14
+                        // set parent to inventory & adjust position
+                        cur_parts.transform.SetParent(inventory.transform);
+                        cur_parts.transform.localPosition = Vector3.zero;
+                        cur_parts.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
+                        Debug.Log($"set parentÇÑ ÆÄÃ÷ id : {cur_parts.id}");
+                        Debug.Log($"set parentÇÑ ÆÄÃ÷ ·ÎÄÃÆ÷Áî : {cur_parts.transform.localPosition}");
+                        Debug.Log($"set parentÇÑ ÆÄÃ÷ ±Û·Î¹úÆ÷Áî : {cur_parts.transform.position}");
+                    }
+                }
+
+
+                isSelect = true;
+            }
+        }
+    }
 
     public void OnSocketMatchEvent(PartsID partsID)
     {
@@ -92,12 +137,13 @@ public class Pattern_019 : PatternBase
                         //SetTransformInventory(cur_parts);
                         HighlightOff(cur_parts);
                         GuideArrowEnable(cur_parts, false);
-
+                         
                         // 5/14
                         // set parent to inventory & adjust position
-                        cur_parts.transform.SetParent(inventory.transform);
-                        cur_parts.transform.localPosition = Vector3.zero;
-                        cur_parts.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
+                        //cur_parts.transform.SetParent(inventory.transform);
+                        //cur_parts.transform.localPosition = Vector3.zero;
+                        //cur_parts.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
+                        //Debug.Log($"set parentÇÑ ÆÄÃ÷ id : {cur_parts.id}");
                     }
                 }
 

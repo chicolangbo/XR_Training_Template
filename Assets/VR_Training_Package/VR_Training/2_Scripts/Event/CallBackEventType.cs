@@ -18,6 +18,8 @@ public class CallBackEventType
         OnSocketMatch,
         /// <summary> 인벤토리 소켓에 매치(결합) 되었을때 호출  </summary>
         OnSocketMatchInventory,
+        /// <summary> 인벤토리 소켓에 닿았을때 호출  </summary>
+        OnSocketTriggerInventory,
         /// <summary> 소켓에서 분리 되었을때 호출 </summary>
         OnSocketSeparate,
         /// <summary> PARTS_SLOT 소켓에 HOVER 되었을때 호출 </summary>
