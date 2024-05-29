@@ -352,17 +352,34 @@ public class XR_ControllerBase : MonoBehaviour
         //controllers.Add(UtilityMethod.GetController(EnumDefinition.ControllerType.RightController));
         //if(controllers.Count <= 0)
         //{
+        Debug.Log("SetControllers");
+
+        if(controllers.Count > 2)
+        {
+            return;
+        }
+
         if(GameObject.FindGameObjectWithTag("LeftController") != null || GameObject.FindGameObjectWithTag("RightController") != null)
         {
-            controllers.Add(GameObject.FindGameObjectWithTag("LeftController").GetComponent<ActionBasedController>());
-            controllers.Add(GameObject.FindGameObjectWithTag("RightController").GetComponent<ActionBasedController>());
+            Debug.Log("lc, rc 게임오브젝트 존재");
+            var lc = GameObject.FindGameObjectWithTag("LeftController").GetComponent<ActionBasedController>();
+            var rc = GameObject.FindGameObjectWithTag("RightController").GetComponent<ActionBasedController>();
+            if (lc != null && rc != null)
+            {
+                controllers.Add(GameObject.FindGameObjectWithTag("LeftController").GetComponent<ActionBasedController>());
+                controllers.Add(GameObject.FindGameObjectWithTag("RightController").GetComponent<ActionBasedController>());
+                Debug.Log("SetControllers complete");
+            }
         }
         //}
     }
 
     public ActionBasedController GetController(EnumDefinition.ControllerType controllerType)
     {
+
+        SetControllers();
         Debug.Log($"컨트롤러 타입 : {(int)controllerType}, 컨트롤러 개수 : {controllers.Count}");
+
         return controllers[(int)controllerType];
     }
 

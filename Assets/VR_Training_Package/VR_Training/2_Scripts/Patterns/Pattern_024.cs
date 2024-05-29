@@ -113,8 +113,9 @@ public class Pattern_024 : PatternBase
                         return;
                     }
 
-                    var data = XR_ControllerBase.instance.IsGrip(col);
-                    if (data.isGripedRight == false && data.isGripedLeft == false)
+                    var isGripRight = XR_ControllerBase.instance.GetGripStatusRight();
+                    var isGripLeft = XR_ControllerBase.instance.GetGripStatusLeft();
+                    if (!isGripRight && !isGripLeft)
                     {
                         bAniTimeInit = true; 
                         return;

@@ -57,10 +57,12 @@ public class Pattern_105 : PatternBase
         {   
             //[0] right
             if (IsMatchPartsID(goalDatas[0].partType, goalDatas[0].id, partsID) && !isRightChange)
-            {   
+            {
+                Debug.Log("IsMatchPartsID");
                 if (IsContainController(col.tag))
                 {
-                    bool isright = XR_ControllerBase.instance.IsGrip(col).isGripedRight;
+                    Debug.Log("IsContainController");
+                    bool isright = XR_ControllerBase.instance.GetGripStatusRight();
                     if(isright)
                     {
                         GameObject g0 = goalDatas[0].transform.GetChild(0).gameObject;
@@ -88,7 +90,7 @@ public class Pattern_105 : PatternBase
             {   
                 if (IsContainController(col.tag))
                 {
-                    bool isleft = XR_ControllerBase.instance.IsGrip(col).isGripedLeft;                    
+                    bool isleft = XR_ControllerBase.instance.GetGripStatusLeft();                    
                     if (isleft)
                     {
                         GameObject g0 = goalDatas[1].transform.GetChild(0).gameObject;
