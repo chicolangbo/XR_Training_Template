@@ -44,9 +44,10 @@ public class Pattern_046 : PatternBase
 
             if (partsID.id == goalData1.id && partsID.partType == goalData1.partType)
             {
-                var data = XR_ControllerBase.instance.IsGrip(col);
+                var isGripLeft = XR_ControllerBase.instance.GetGripStatusLeft();
+                var isGripRight = XR_ControllerBase.instance.GetGripStatusRight();
 
-                if (!data.isGripedRight && data.isGripedLeft == false) return;
+                if (!isGripLeft && !isGripRight) return;
 
                 if (partsID.id == 4)  //CarDashScreenOff
                     CarDashScreenOff();

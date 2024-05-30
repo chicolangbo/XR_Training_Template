@@ -57,8 +57,10 @@ public class Pattern_027 : PatternBase
                 {
 
 
-                    var data = XR_ControllerBase.instance.IsGrip(col);
-                    if (!data.isGripedRight && data.isGripedLeft == false)
+                    var isGripLeft = XR_ControllerBase.instance.GetGripStatusLeft();
+                    var isGripRight = XR_ControllerBase.instance.GetGripStatusRight();
+
+                    if (!isGripLeft && !isGripRight)
                     {
                         SoundEffectManager.instance.Stop(EnumDefinition.SOUND_EFFECT.spring_compressor_01);
                         SoundEffectManager.instance.Stop(EnumDefinition.SOUND_EFFECT.spring_compressor_03);

@@ -77,7 +77,7 @@ public class Pattern_019 : PatternBase
             inventory.keepSelectedTargetValid = false;
         }
 
-        if (enableEvent && partsID.id != 240 && partsID.id != 248 && partsID.id != 259 && partsID.id != 270 && partsID.id != 279)
+        if (enableEvent && partsID.id != 226 && partsID.id != 240 && partsID.id != 248 && partsID.id != 259 && partsID.id != 270 && partsID.id != 279)
         {
             if (partsID.id == goalDatas[currentIndex].id && partsID.partType == EnumDefinition.PartsType.PARTS)
             {
@@ -96,6 +96,7 @@ public class Pattern_019 : PatternBase
 
                         // 5/14
                         // set parent to inventory & adjust position
+                        // 위치 수정 필요
                         cur_parts.transform.SetParent(inventory.transform);
                         cur_parts.transform.localPosition = Vector3.zero;
                         cur_parts.gameObject.GetComponent<XRGrabInteractable>().enabled = false;

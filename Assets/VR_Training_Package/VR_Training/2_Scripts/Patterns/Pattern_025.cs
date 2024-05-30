@@ -55,8 +55,10 @@ public class Pattern_025 : PatternBase
                 if (IsContainController(col.tag))
                 {
 
-                    var data = XR_ControllerBase.instance.IsGrip(col);
-                    if (data.isGripedRight == false && data.isGripedLeft == false)
+                    var isGripLeft = XR_ControllerBase.instance.GetGripStatusLeft();
+                    var isGripRight = XR_ControllerBase.instance.GetGripStatusRight();
+
+                    if (!isGripLeft && !isGripRight)
                     {
                         return; 
                     }
